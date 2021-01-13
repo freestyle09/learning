@@ -1,4 +1,4 @@
-// Lesson 1 - Dekompozycja obiektów
+// * Lesson 1 - Dekompozycja obiektów
 let person = {
   firstName: "Jan",
   lastName: "Kowalski",
@@ -7,7 +7,7 @@ let person = {
 
 let { firstName: fName, lastName, age } = person || {};
 
-// Lesson 2 - Dekompozycja tablic
+// * Lesson 2 - Dekompozycja tablic
 const numbers = [10, 20, 30, 40, 50];
 
 let [, second] = numbers || [];
@@ -20,7 +20,7 @@ let a = 1,
 
 [a, b] = [b, a];
 
-// Lesson 3 - Dekompozycja zagnieżdżonych struktur
+// * Lesson 3 - Dekompozycja zagnieżdżonych struktur
 let person = {
   firstName: "Jan",
   lastName: "Kowalski",
@@ -43,12 +43,12 @@ let {
   },
 } = person || {};
 
-// Lesson 4 - Domyślne wartości i operator rest
+// * Lesson 4 - Domyślne wartości i operator rest
 const numbers = [10, 20, 30, 40, 50];
 
 let [first, second, ...rest] = numbers || [];
 
-// Lesson 5 - Dekompozycja parametrów funkcji
+// * Lesson 5 - Dekompozycja parametrów funkcji
 function setSliderSpeed({ speed, easing } = {}) {
   let slider = {};
 

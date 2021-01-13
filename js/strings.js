@@ -1,4 +1,4 @@
-// Lesson 1 - Template Strings
+// * Lesson 1 - Template Strings
 let person = {
   firstName: "Jan",
   lastName: "Kowalski",
@@ -7,7 +7,7 @@ let person = {
 
 let info = `Moje imię to \$ ${person.firstName} i nazwisko to ${person.lastName}, a mój wiek to ${person.age}`;
 
-// Lesson 2 - Funkcje tagujące
+// * Lesson 2 - Funkcje tagujące
 
 function formatPrice(strings, ...values) {
   console.log(strings); // ['Dodałeś do koszyka produkt: ','w cenie']
@@ -24,7 +24,7 @@ let { name, price } = product;
 
 let info = formatPrice`Dodałes do koszyka produkt: ${name} w cenie ${price}`;
 
-// Lesson 3 - Nowe metody dla stringów
+// * Lesson 3 - Nowe metody dla stringów
 const URL = "http://google.pl";
 
 function isHTTPS(text) {

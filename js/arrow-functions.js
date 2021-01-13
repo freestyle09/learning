@@ -1,3 +1,4 @@
+// * Lesson 1
 let getName = function () {
   return "Jan";
 };
@@ -18,7 +19,7 @@ let array = [1, 2, 22, 32, 12];
 
 array.filter((value) => value > 20);
 
-// Second lesson - Arrow functions i kontekst
+// * Lesson 2 - Arrow functions i kontekst
 let person = {
   firstName: "Jan",
   lastName: "Kowalski",
@@ -39,7 +40,7 @@ let Person = (firstName) => {
 person1 = new Person("Anna"); // Person is not a constructor
 Person.prototype; // undefined
 
-// Third lesson - Domyślne parametry
+// * Lesson 3 - Domyślne parametry
 function multiply(number, multipleBy = 2) {
   return number * multipleBy;
 }
@@ -47,7 +48,7 @@ function multiply(number, multipleBy = 2) {
 // Lazy evaluation - right side is not called if first is true
 true || false;
 
-// Lesson 4 - Domyślne parametry i zmienna arguments
+// * Lesson 4 - Domyślne parametry i zmienna arguments
 function multiplyBy(x, n = x) {
   "use scrict";
 
@@ -58,7 +59,7 @@ function multiplyBy(x, n = x) {
   return x * n;
 }
 
-// Lesson 5 - Nazwa funkcji i debugowanie
+// * Lesson 5 - Nazwa funkcji i debugowanie
 const getName = function name() {
   return "Jan";
 };

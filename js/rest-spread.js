@@ -1,4 +1,4 @@
-// Lesson 1 - Rest (it must be last parameter)
+// * Lesson 1 - Rest (it must be last parameter)
 
 function calculate(type, ...args) {
   let args = [].slice.call(arguments, 1);
@@ -15,7 +15,7 @@ function calculate(type, ...args) {
 
 calculate("sum", 2, 22, 33, 21, 12, 90, 25);
 
-// Lesson 2 - Spread
+// * Lesson 2 - Spread
 
 let numbers = [1, 2, 3, 4, 5, 6];
 
