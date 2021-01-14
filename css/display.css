@@ -1,0 +1,23 @@
+.selector {
+  property: value;
+}
+
+/* *  */
+
+/* Display */
+
+.selector {
+  display: block; /* * block The element generates a block element box, generating line breaks both before and after the element when in the normal flow. */
+  display: run-in; /* ! NOT SUPPORTED */
+  display: contents; /* TODO EXPERIMENTAL * These elements don't produce a specific box by themselves. They are replaced by their pseudo-box and their child boxes. https://caniuse.com/?search=display%3A%20contents */
+  display: flex; /* * The element behaves like a block element and lays out its content according to the flexbox model. */
+  display: flow-root; /* * The element generates a block element box that establishes a new block formatting context, defining where the formatting root lies https://codepen.io/rachelandrew/pen/RKgevX */
+  display: grid; /* * The element behaves like a block element and lays out its content according to the grid model. */
+  display: ruby; /* TODO EXPERIMENTAL The element behaves like an inline element and lays out its content according to the ruby formatting model. It behaves like the corresponding HTML <ruby> elements. https://www.w3.org/TR/css-ruby-1/ */
+  display: inline; /* * You cannot set height and width to this elements | The element generates one or more inline element boxes that do not generate line breaks before or after themselves. In normal flow, the next element will be on the same line if there is space */
+  display: inline-block; /* * You can set height and width but by default It do not do the line break | The element generates a block element box that will be flowed with surrounding content as if it were a single inline box (behaving much like a replaced element would). */
+  display: inline-flex; /* * The element behaves like an inline element and lays out its content according to the flexbox model. */
+  display: inline-grid; /* * The element behaves like an inline element and lays out its content according to the grid model. */
+  display: inline-table; /* * https://www.brunildo.org/test/inline-block2.html | The inline-table value does not have a direct mapping in HTML. It behaves like an HTML <table> element, but as an inline box, rather than a block-level box. Inside the table box is a block-level context. */
+  display: list-item; /* * A single value of list-item will cause the element to behave like a list item. This can be used together with list-style-type and list-style-position. */
+}
