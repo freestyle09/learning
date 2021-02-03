@@ -1,16 +1,23 @@
 <template>
   <div class="todo-item" v-bind:class="{ 'is-complete': todo.completed }">
     <p>
-      <input type="checkbox" @change="markComplete" />
+      <input
+        type="checkbox"
+        @change="markComplete"
+        v-bind:checked="todo.completed"
+      />
       {{ todo.title }}
-      <button class="del" @click="$emit('del-todo', todo.id)">X</button>
+      <Button class="del" @click="$emit('del-todo', todo.id)">X</Button>
     </p>
   </div>
 </template>
 
 <script>
+import Button from "@/components/Button";
+
 export default {
   name: "TodoItem",
+  components: { Button },
   props: ["todo"],
   data() {
     this.todo_data = this.todo;
@@ -31,5 +38,6 @@ export default {
 }
 .del {
   background-color: var(--delete-color);
+  color: #fff;
 }
 </style>
