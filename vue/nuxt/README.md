@@ -1,4 +1,4 @@
-# nuxt-course
+# nuxt
 
 ## Build Setup
 
